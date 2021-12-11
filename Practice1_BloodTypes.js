@@ -1,4 +1,3 @@
-
 //Creating function blood and assigning 2 parameters: donor and receiver
 const blood = (donor, receiver) => {
 
