@@ -2,7 +2,7 @@ const alphabet = ["Error","A","B","C","D","E","F","G","H","I","J","K","L","M","N
 
 class digitalDecipher {
     constructor(eMessage, key) {
-        var eMessage = eMessage;
+        let eMessage = new Array(eMessage);
         
         var key = key;
         var keyArr = String(num).split("").map((num) => {
