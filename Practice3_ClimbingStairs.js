@@ -8,7 +8,7 @@ function minCost(cost,n) {
     dp[1] = cost[1];
     
 
-    for (let i = 2; i < n; i++) {
+    for (let i = 2; i < n; i ++) {
       dp[i] = cost[i] + Math.min(dp[i - 1],
       dp[i - 2]);
     }
