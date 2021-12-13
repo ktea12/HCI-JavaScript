@@ -1,7 +1,6 @@
 const alphabet = ["Error","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-class digitalDecipher {
-    constructor(eMessage, key) {
+function digitalDecipher (eMessage, key) {
         let eMessage = new Array(eMessage);
         
         var key = key;
@@ -11,6 +10,4 @@ class digitalDecipher {
         var x = eMessage.map(function(item, index) {
             return item - keyArr[index];
             });
-        
-        
-    }};
+    };
