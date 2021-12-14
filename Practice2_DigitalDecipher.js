@@ -3,6 +3,7 @@ const alphabet = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h'
 
 function digitalDecipher (eMessage, key) {
         let eMessage = new Array(eMessage);
+        var output = "";
         
         var key = key;
         var keyArr = String(num).split("").map((num) => {
@@ -11,4 +12,7 @@ function digitalDecipher (eMessage, key) {
         var x = eMessage.map(function(item, index) {
             return item - keyArr[index];
             });
+        for (let i = 0; i < x.length; i ++) {
+             output += alphabet[x[i]];
+        };
     };
