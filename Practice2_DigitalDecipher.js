@@ -15,4 +15,5 @@ function digitalDecipher (eMessage, key) {
         for (let i = 0; i < x.length; i ++) {
              output += alphabet[x[i]];
         };
+        return output;
     };
