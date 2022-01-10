@@ -1,0 +1,22 @@
+a = [    
+        [1, 2, 3],  
+        [4, 5, 6],  
+        [7, 8, 9]  
+    ]
+
+#Calculates sum of each row of given matrix. To traverse the array, two loops will be utilized, with the outer loop selecting a row and the inner loop representing the columns in the matrix a.
+def matrix_sum(matrix):
+    for i in range (len(matrix)): #will run n times
+        sumRow = 0
+        for j in range(len(matrix[i])):  #will run n times
+            sumRow = sumRow + matrix[i][j] #will run constant times
+        print("Sum of " + str(i+1) +" row: " + str(sumRow))
+     
+    #Calculates sum of each column of given matrix. To traverse the array, two loops will be utilized, with the outer loop selecting a column and the inner loop representing the rows in the matrix a.
+    for i in range(len(matrix)):  #will run n times
+        sumCol = 0
+        for j in range(len(matrix[i])):   #will run n times
+            sumCol = sumCol + matrix[j][i] #will run constant times
+        print("Sum of " + str(i+1) +" column: " + str(sumCol))
+
+matrix_sum(a)
